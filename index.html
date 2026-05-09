@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<!-- saved from url=(0081)file:///C:/Users/user/Downloads/online_viewer_net%20-%202026-05-08T154054.629.htm -->
-<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>수능 국어 마스터 v2.0</title>
-<link href="./수능 국어 진단기 마스터 v2.0_files/css2" rel="stylesheet">
-<script src="./수능 국어 진단기 마스터 v2.0_files/chart.umd.min.js.다운로드"></script>
+<link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.min.js"></script>
 <style>
 :root {
   --bg:#090b0e; --bg-mid:#0f1217; --bg-soft:#161920; --border:#1e2330;
@@ -377,7 +377,7 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;height:500px;z-index:
       </div>
     </div>
   </div>
-  <button class="btn btn-primary" onclick="startQuiz(&#39;new&#39;)">실전 시작 →</button>
+  <button class="btn btn-primary" onclick="startQuiz('new')">실전 시작 →</button>
 </div>
 
 <!-- ══════════ 퀴즈 ══════════ -->
@@ -417,7 +417,7 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;height:500px;z-index:
   <div style="margin-top:24px;display:grid;gap:10px;">
     <button class="btn btn-primary" onclick="openRetryModal()">다시 풀기</button>
     <button class="btn btn-ghost" onclick="downloadReport()">진단 리포트 다운로드</button>
-    <button class="btn btn-ghost" onclick="showScreen(&#39;intro-screen&#39;)">처음으로</button>
+    <button class="btn btn-ghost" onclick="showScreen('intro-screen')">처음으로</button>
   </div>
 </div>
 
@@ -429,8 +429,8 @@ body::after{content:'';position:fixed;top:0;left:0;right:0;height:500px;z-index:
     <div class="modal-title">다시 풀기</div>
     <div class="modal-sub">어떤 방식으로 도전할까요?</div>
     <div class="modal-btn-group">
-      <button class="btn btn-primary" onclick="startQuiz(&#39;wrong&#39;)"><span id="wrong-count-label">오답 문항만</span></button>
-      <button class="btn btn-ghost" onclick="startQuiz(&#39;new&#39;)">새 문제 세트</button>
+      <button class="btn btn-primary" onclick="startQuiz('wrong')"><span id="wrong-count-label">오답 문항만</span></button>
+      <button class="btn btn-ghost" onclick="startQuiz('new')">새 문제 세트</button>
       <button class="btn btn-ghost" onclick="closeRetryModal()">취소</button>
     </div>
   </div>
@@ -1656,5 +1656,5 @@ window.downloadReport=function(){
   setTimeout(()=>URL.revokeObjectURL(url),1000);
 };
 </script>
-
-</body></html>
+</body>
+</html>
